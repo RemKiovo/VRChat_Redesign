@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vrc_logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="/style.css" />
         <title>Login - VRChat</title>
-        <script type="module" src="src/scripts/main.js" defer></script>
+        <script type="module" src="/main.js" defer></script>
     </head>
     <body>
         <div class="absolute">
@@ -18,9 +18,9 @@
         </div>
         <main class="flex items-center justify-center">
             <section
-                class="bg-zinc-950 backdrop-blur-sm bg-opacity-80 flex items-center justify-center flex-col p-8 rounded-3xl w-[30rem]"
+                class="bg-zinc-950 backdrop-blur-sm bg-opacity-80 flex items-center justify-center flex-col p-10 rounded-3xl w-[30rem]"
             >
-                <h1 class="text-4xl font-black text-white pb-4">
+                <h1 class="text-4xl font-black text-white">
                     Welcome to VRChat
                 </h1>
                 <form
@@ -35,7 +35,7 @@
                         id="username"
                         name="username"
                         placeholder="Username / Email"
-                        class="rounded-[50rem] py-2 px-5 bg-zinc-900 text-slate-500 font-light border border-zinc-800 mt-4 mb-2 self-stretch"
+                        class="rounded-[50rem] py-2 px-5 bg-zinc-900 text-slate-500 font-light border border-zinc-800 my-2 mt-6 self-stretch"
                         required
                     />
                     <label for="password" class="sr-only">Password</label>
@@ -44,17 +44,17 @@
                         id="password"
                         name="password"
                         placeholder="Password"
-                        class="rounded-[50rem] py-2 px-5 bg-zinc-900 text-slate-500 font-light border border-zinc-800 mb-4 mt-2 self-stretch"
+                        class="rounded-[50rem] py-2 px-5 bg-zinc-900 text-slate-500 font-light border border-zinc-800 my-2 self-stretch"
                         required
                     />
                     <a
                         href="#"
-                        class="self-end font-thin mb-4 text-blue-300 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 transition"
+                        class="self-end font-thin my-2 mb-3 text-blue-300 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 transition"
                         >Forgot your password?</a
                     >
                     <button
                         type="submit"
-                        class="text-white bg-gradient-to-r from-[#2E3683] to-[#017F90] p-3 rounded-[50rem] w-full hover:opacity-85 transition-all mb-4"
+                        class="text-white bg-gradient-to-r from-[#2E3683] to-[#017F90] p-3 rounded-[50rem] w-full hover:opacity-85 transition-all mb-6"
                     >
                         Login
                     </button>
@@ -81,7 +81,7 @@
                 </form>
             </section>
             <div
-                class="absolute bottom-5 right-0 bg-zinc-950 bg-opacity-80 py-4 px-8 rounded-tl-xl rounded-bl-xl"
+                class="absolute bottom-5 right-0 bg-zinc-950 bg-opacity-80 py-4 backdrop-blur-sm px-8 rounded-tl-xl rounded-bl-xl"
             >
                 <h4 class="text-white font-bold text-center">World</h4>
                 <p class="text-white">Exoplanet Journey by *Niko</p>
