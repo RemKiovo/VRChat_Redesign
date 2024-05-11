@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vrc_logo.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/css/style.css" />
+        <title>Login - VRChat</title>
+        <script type="module" src="src/scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div class="absolute">
+            <img
+                src="/vrc_logo.svg"
+                alt="VRChat Logo"
+                class="w-56 h-56 mx-12"
+            />
+        </div>
+        <main class="flex items-center justify-center">
+            <section
+                class="bg-zinc-950 backdrop-blur-sm bg-opacity-80 flex items-center justify-center flex-col p-8 rounded-3xl w-[30rem]"
+            >
+                <h1 class="text-4xl font-black text-white pb-4">
+                    Welcome to VRChat
+                </h1>
+                <form
+                    action=""
+                    method="post"
+                    class="flex flex-col items-center justify-center w-full"
+                >
+                    <label for="username" class="sr-only">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Username / Email"
+                        class="rounded-[50rem] py-2 px-5 bg-zinc-900 text-slate-500 font-light border border-zinc-800 mt-4 mb-2 self-stretch"
+                        required
+                    />
+                    <label for="password" class="sr-only">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        class="rounded-[50rem] py-2 px-5 bg-zinc-900 text-slate-500 font-light border border-zinc-800 mb-4 mt-2 self-stretch"
+                        required
+                    />
+                    <a
+                        href="#"
+                        class="self-end font-thin mb-4 text-blue-300 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 transition"
+                        >Forgot your password?</a
+                    >
+                    <button
+                        type="submit"
+                        class="text-white bg-gradient-to-r from-[#2E3683] to-[#017F90] p-3 rounded-[50rem] w-full hover:opacity-85 transition-all mb-4"
+                    >
+                        Login
+                    </button>
+                    <hr
+                        class="border rounded-full p-[0.1rem] bg-white opacity-10 mb-4 w-full"
+                    />
+                    <h2 class="text-xl font-black text-white">
+                        New to VRChat?
+                    </h2>
+                    <a
+                        href="#"
+                        class="text-white bg-gradient-to-r from-[#2E3683] to-[#017F90] p-3 rounded-[50rem] w-full hover:opacity-85 transition-all mt-4 mb-12 text-center"
+                        >Register</a
+                    >
+                    <p class="text-xs text-white text-center">
+                        You can link your VRChat account to your existing Oculus
+                        / Steam / Viveport account and keep all your friends.
+                        <a
+                            href="#"
+                            class="text-blue-300 underline decoration-transparent hover:decoration-blue-400 hover:text-blue-400 transition"
+                            >Learn More</a
+                        >
+                    </p>
+                </form>
+            </section>
+            <div
+                class="absolute bottom-5 right-0 bg-zinc-950 bg-opacity-80 py-4 px-8 rounded-tl-xl rounded-bl-xl"
+            >
+                <h4 class="text-white font-bold text-center">World</h4>
+                <p class="text-white">Exoplanet Journey by *Niko</p>
+            </div>
+        </main>
+    </body>
+</html>
