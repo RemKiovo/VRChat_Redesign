@@ -5,6 +5,7 @@
 main {
     height: 100vh;
     width: 100vw;
-    background-image: url("backgrounds/background1.jpg");
+    background-image: url("assets/backgrounds/background1.jpg");
     background-size: cover;
+    transition: background-image 1s ease-in-out;
 }

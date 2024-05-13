@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vrc_logo.svg" />
+        <link rel="icon" type="image/svg+xml" href="assets/vrc_logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/style.css" />
         <title>Login - VRChat</title>
@@ -11,14 +11,16 @@
     <body>
         <div class="absolute">
             <img
-                src="/vrc_logo.svg"
+                src="assets/vrc_logo.svg"
                 alt="VRChat Logo"
                 class="w-56 h-56 mx-12"
             />
         </div>
-        <main class="flex items-center justify-center">
+        <main class="flex items-center justify-center"
+            id="main"
+        >
             <section
-                class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] bg-zinc-900 backdrop-blur-lg bg-opacity-60 flex items-center justify-center flex-col p-10 rounded-3xl w-[30rem] "
+                class="drop-shadow-[0_10px_10px_rgba(0,0,0,0.9)] bg-zinc-900 backdrop-blur-lg bg-opacity-60 flex items-center justify-center flex-col p-10 rounded-3xl w-[30rem] "
             >
                 <h1 class="text-3xl font-[700] text-white">
                     Welcome to VRChat
@@ -84,7 +86,9 @@
                 class="absolute bottom-5 right-0 bg-zinc-950 bg-opacity-80 py-4 backdrop-blur-sm px-8 rounded-tl-xl rounded-bl-xl"
             >
                 <h4 class="text-white font-bold text-center">World</h4>
-                <p class="text-white">Exoplanet Journey by *Niko</p>
+                <p class="text-white"
+                   id="worldinfo">
+                   Exoplanet Journey by *Niko</p>
             </div>
         </main>
     </body>
